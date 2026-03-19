@@ -20,11 +20,11 @@ public class TestRunner {
     private static void runTest(String name, Runnable test, List<String> results) {
         try {
             test.run();
-            results.add("✅ " + name);
+            results.add("✓ " + name);
         } catch (AssertionError e) {
-            results.add("❌ " + name + " -> " + e.getMessage());
+            results.add("X " + name + " -> " + e.getMessage());
         } catch (Exception e) {
-            results.add("❌ " + name + " -> Exception: " + e.getMessage());
+            results.add("X " + name + " -> Exception: " + e.getMessage());
         }
     }
 
