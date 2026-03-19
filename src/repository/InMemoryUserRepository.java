@@ -1,8 +1,8 @@
-package repository;
+package repository; 
 
+import java.util.*;
 import model.Email;
 import model.User;
-import java.util.*;
 
 public class InMemoryUserRepository implements UserRepository {
 
